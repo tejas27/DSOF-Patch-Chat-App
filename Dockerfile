@@ -1,4 +1,4 @@
-FROM openjdk:25-ea-20-jdk-slim-bookworm
+FROM openjdk:25-ea-20-jdk-alpine
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
